@@ -1,32 +1,58 @@
 .Hero {
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url(../../assets/home/universe.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 10%;
 }
 
 .Hero-logo {
   height: 40vmin;
   pointer-events: none;
+  border-radius: 50%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .Hero-logo {
-    animation: Hero-logo-spin infinite 20s linear;
+    animation: Hero-logo-spin infinite 50s linear;
   }
 }
 
 .Hero-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: left;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 50%;
 }
-
+.Hero-header-img {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
 .Hero-header p {
   font-size: 20px;
-  line-height: 2.5;
+  padding: 4% 0;
+}
+.Hero-header img {
+  width: 500px;
+  height: 500px;
+}
+.Hero-header button {
+  background-color: #ffffff;
+  width: fit-content;
+  padding: 1% 5%;
+  border-radius: 10px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 @keyframes Hero-logo-spin {
@@ -37,3 +63,11 @@
     transform: rotate(360deg);
   }
 }
+/* @keyframes Hero-logo-spin {
+  from {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+} */

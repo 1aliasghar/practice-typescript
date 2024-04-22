@@ -1,0 +1,39 @@
+.Navbar {
+  width: 100%;
+  background-color: #00000050;
+  padding: 1% 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.logoText {
+  font: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #ffffff;
+}
+.logoText:hover {
+  font-weight: 700;
+  text-transform: uppercase;
+  transform: scale(1.2);
+}
+.menuText {
+  /* padding: 0.5% 2%; */
+  width: 7%;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: gray;
+  color: white;
+  transition: 0.5s;
+}
+.Navbar button:hover {
+  background-color: white;
+  color: black;
+}

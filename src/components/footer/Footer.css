@@ -1,0 +1,20 @@
+.Footer {
+  width: 100%;
+  background-color: black;
+  color: #ffffff;
+  border-top: 1px solid white;
+  /* padding: 3% 10% 0 10%; */
+}
+.footerTextDiv {
+  width: 100%;
+  padding: 1% 10%;
+}
+.footerDivider {
+  height: 0.5px;
+  width: 100%;
+  background-color: gray;
+}
+.footerCopyright {
+  width: 100%;
+  padding: 0 10%;
+}
